@@ -29,7 +29,6 @@ export class HomeComponent implements OnInit {
         this.values = response;
       },
       error => {
-        console.log(error);
       }
     );
   }

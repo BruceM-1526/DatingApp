@@ -24,7 +24,6 @@ export class ErrorInterceptor implements HttpInterceptor {
           }
           const applicationError = error.headers.get('Application-Error');
           if (applicationError) {
-            console.log('applicationError: ', applicationError);
             return throwError(applicationError);
           }
           const serverError = error.error;
